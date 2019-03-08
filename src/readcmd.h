@@ -14,6 +14,7 @@ struct cmdline *readcmd(void);
 struct cmdline {
 	char *err;	/* If not null, it is an error message that should be
 			   displayed. The other fields are null. */
+    int en_fond;    /*  True if user asked for execute the command in background */
 	char *in;	/* If not null : name of file for input redirection. */
 	char *out;	/* If not null : name of file for output redirection. */
 	char ***seq;	/* See comment below */

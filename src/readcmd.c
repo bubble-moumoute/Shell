@@ -45,7 +45,7 @@ static char *readline(void)
 		free(buf);
 		return NULL;
 	}
-	
+
 	if (feof(stdin)) { /* End of file (ctrl-d) */
 	    fflush(stdout);
 	    exit(0);
@@ -161,6 +161,7 @@ struct cmdline *readcmd(void)
 	char **cmd;
 	char ***seq;
 	size_t cmd_len, seq_len;
+	int en_fond_bool = 0;
 
 	line = readline();
 	if (line == NULL) {
@@ -223,7 +224,6 @@ struct cmdline *readcmd(void)
 				s->err = "misplaced pipe";
 				goto error;
 			}
-
 			seq = xrealloc(seq, (seq_len + 2) * sizeof(char **));
 			seq[seq_len++] = cmd;
 			seq[seq_len] = 0;
@@ -232,6 +232,12 @@ struct cmdline *readcmd(void)
 			cmd[0] = 0;
 			cmd_len = 0;
 			break;
+        case '&':
+            if(words[i]!=0){
+                goto error;
+            }
+            en_fond_bool = 1;
+            break;
 		default:
 			cmd = xrealloc(cmd, (cmd_len + 2) * sizeof(char *));
 			cmd[cmd_len++] = w;
@@ -251,6 +257,7 @@ struct cmdline *readcmd(void)
 		free(cmd);
 	free(words);
 	s->seq = seq;
+	s->en_fond = en_fond_bool;
 	return s;
 error:
 	while ((w = words[i++]) != 0) {

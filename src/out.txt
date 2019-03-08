@@ -1,0 +1,18 @@
+total 156K
+drwxr-xr-x 2 kitaeffe ima-nogroup 4,0K mars   8 15:06 .
+drwxr-xr-x 6 kitaeffe ima-nogroup 4,0K mars   8 09:04 ..
+-rw-r--r-- 1 kitaeffe ima-nogroup  24K févr. 15  2018 csapp.c
+-rw-r--r-- 1 kitaeffe ima-nogroup 6,5K févr. 15  2018 csapp.h
+-rw-r--r-- 1 kitaeffe ima-nogroup  483 mars   4 17:28 Makefile
+-rw-r--r-- 1 kitaeffe ima-nogroup    0 mars   8 15:06 out.txt
+-rw-r--r-- 1 kitaeffe ima-nogroup 4,8K mars   8 14:28 readcmd.c
+-rw-r--r-- 1 kitaeffe ima-nogroup 1,1K mars   8 14:27 readcmd.h
+-rw-r--r-- 1 kitaeffe ima-nogroup 5,1K févr. 15  2018 sdriver.pl
+-rw-r--r-- 1 kitaeffe ima-nogroup  62K mars   8 14:54 shell
+-rw-r--r-- 1 kitaeffe ima-nogroup 3,0K mars   8 14:28 shell3.c
+-rw-r--r-- 1 kitaeffe ima-nogroup 2,6K mars   8 14:37 shell.c
+-rw-r--r-- 1 kitaeffe ima-nogroup   55 mars   2 19:59 test01.txt
+-rw-r--r-- 1 kitaeffe ima-nogroup   59 févr. 15  2018 test02.txt
+-rw-r--r-- 1 kitaeffe ima-nogroup   82 févr. 15  2018 test03.txt
+-rw-r--r-- 1 kitaeffe ima-nogroup   68 févr. 15  2018 test04.txt
+-rw-r--r-- 1 kitaeffe ima-nogroup   60 mars   7 17:24 test05.txt
